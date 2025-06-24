@@ -7,61 +7,58 @@
   <title>KING TOP UP - Top Up Game Murah</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1587840171660-8b850147754e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
     }
     header {
-      background: #111;
-      padding: 30px;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 40px 20px;
     }
-    header h1 {
-      margin: 0;
+    header img {
+      width: 80px;
+    }
+    h1 {
+      margin: 10px 0 5px;
       color: gold;
-      font-size: 2.5em;
     }
-    header p {
-      font-size: 1.2em;
+    p {
+      margin: 0;
+      font-size: 18px;
     }
     section {
-      padding: 30px 20px;
-    }
-    .button {
-      background: gold;
-      color: #000;
-      padding: 12px 25px;
-      text-decoration: none;
-      font-weight: bold;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.75);
+      margin: 20px;
       border-radius: 10px;
-      display: inline-block;
-      margin-top: 10px;
     }
-    .game-list, .form-section, .info-section, .testimonial-section {
-      margin-top: 20px;
-      background: #222;
-      padding: 20px;
-      border-radius: 12px;
+    .game {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #222;
+      border-radius: 10px;
     }
-    .game-list h3, .info-section h3, .testimonial-section h3 {
+    .game h3 {
       margin-top: 0;
     }
-    input, select {
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
+    .btn {
+      background: gold;
+      color: black;
+      padding: 10px 20px;
       border: none;
-      width: 100%;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
     footer {
-      background: #111;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
       font-size: 14px;
-      color: #aaa;
+      color: #ccc;
     }
     a {
       color: gold;
@@ -70,96 +67,34 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="KingTopUp Logo" />
     <h1>KING TOP UP</h1>
-    <p>Top Up Game Murah & Cepat</p>
+    <p>Top Up Game Murah, Cepat, & Terpercaya</p>
   </header>
 
   <section>
     <h2>🎮 Game Populer</h2>
-    <div class="game-list">
-      <h3>Mobile Legends: Bambang 😎</h3>
-      <p>Mulai dari Rp5.000</p>
-      <h3>Free Fire 🔥</h3>
-      <p>Mulai dari Rp5.000</p>
-      <h3>PUBG Mobile 🔫</h3>
-      <p>Mulai dari Rp10.000</p>
-      <h3>Genshin Impact ✨</h3>
-      <p>Mulai dari Rp20.000</p>
-      <h3>Higgs Domino 🀄</h3>
-      <p>Mulai dari Rp5.000</p>
-    </div>
+    <div class="game"><h3>Mobile Legends</h3><p>Mulai Rp4.900</p></div>
+    <div class="game"><h3>Free Fire</h3><p>Mulai Rp4.900</p></div>
+    <div class="game"><h3>PUBG Mobile</h3><p>Mulai Rp9.500</p></div>
+    <div class="game"><h3>Genshin Impact</h3><p>Mulai Rp18.000</p></div>
+    <div class="game"><h3>Honkai Star Rail</h3><p>Mulai Rp18.000</p></div>
+    <div class="game"><h3>Call of Duty Mobile</h3><p>Mulai Rp9.500</p></div>
+    <div class="game"><h3>Valorant</h3><p>Mulai Rp45.000</p></div>
+    <div class="game"><h3>Higgs Domino</h3><p>Mulai Rp4.900</p></div>
   </section>
 
   <section>
-    <h2>📝 Form Top Up</h2>
-    <div class="form-section">
-      <form onsubmit="sendToWhatsApp(); return false;">
-        <label>Masukkan ID Game:</label>
-        <input type="text" id="gameId" placeholder="Contoh: 123456789 (1234)" required />
-
-        <label>Pilih Game:</label>
-        <select id="gameName">
-          <option value="Mobile Legends">Mobile Legends</option>
-          <option value="Free Fire">Free Fire</option>
-          <option value="PUBG Mobile">PUBG Mobile</option>
-          <option value="Genshin Impact">Genshin Impact</option>
-          <option value="Higgs Domino">Higgs Domino</option>
-        </select>
-
-        <label>Pilih Nominal:</label>
-        <select id="nominal">
-          <option value="5.000">5.000</option>
-          <option value="10.000">10.000</option>
-          <option value="20.000">20.000</option>
-          <option value="50.000">50.000</option>
-        </select>
-
-        <button class="button" type="submit">Top Up via WhatsApp</button>
-      </form>
-    </div>
-  </section>
-
-  <section>
-    <h2>ℹ️ Cara Top Up</h2>
-    <div class="info-section">
-      <h3>Langkah-langkah:</h3>
-      <ol>
-        <li>Pilih game & nominal</li>
-        <li>Masukkan ID akun kamu</li>
-        <li>Klik "Top Up via WhatsApp"</li>
-        <li>Admin akan proses setelah pembayaran</li>
-      </ol>
-    </div>
-  </section>
-
-  <section>
-    <h2>⭐ Testimoni Pelanggan</h2>
-    <div class="testimonial-section">
-      <p>"Top up cepat dan aman banget!" - <b>Rizky</b></p>
-      <p>"Langganan terus karena pelayanannya mantap." - <b>Ani</b></p>
-    </div>
-  </section>
-
-  <section>
-    <h2>📞 Kontak Kami</h2>
-    <p>📱 WhatsApp: <a href="https://wa.me/6281312624847">+62 813-1262-4847</a></p>
-    <p>📧 Email: admin@kingtopup.com</p>
-    <p>📍 Lokasi: Online 24 Jam via WhatsApp</p>
+    <h2>📝 Cara Pemesanan</h2>
+    <p>1. Pilih game dan nominal</p>
+    <p>2. Chat via WhatsApp: <a href="https://wa.me/6281312624847">+62 813-1262-4847</a></p>
+    <p>3. Bayar via <b>OVO / GoPay / Dana</b> ke nomor yang sama</p>
+    <p>4. Top up diproses dalam 1–5 menit</p>
+    <button class="btn" onclick="window.location.href='https://wa.me/6281312624847'">Pesan Sekarang</button>
   </section>
 
   <footer>
-    &copy; 2025 KING TOP UP - Semua Hak Dilindungi
+    &copy; 2025 KingTopUp. Powered by Layanan Top Up Game Terpercaya.
   </footer>
-
-  <script>
-    function sendToWhatsApp() {
-      var id = document.getElementById("gameId").value;
-      var game = document.getElementById("gameName").value;
-      var nominal = document.getElementById("nominal").value;
-      var message = `Halo admin KING TOP UP! Saya ingin top up game ${game} dengan nominal Rp${nominal}. ID saya: ${id}`;
-      var url = `https://wa.me/6281312624847?text=${encodeURIComponent(message)}`;
-      window.open(url, '_blank');
-    }
-  </script>
 </body>
 </html>
