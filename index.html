@@ -1,130 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KingTopUp - Promo Produk Topupedia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Topup game murah, cepat, dan terpercaya hanya di KingTopUp!" />
+  <title>KingTopUp - Portal Top Up Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
-    body {
-      background: #0d0d1a;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
+    body, html {
       margin: 0;
       padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #00ffff;
-    }
-    .warning {
-      background: #330000;
-      color: #ffb3b3;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    .product {
-      background: #1a1a2e;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #000;
-    }
-    .product img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .product h3 {
-      margin-top: 10px;
-      color: #00ffff;
-    }
-    .buy-btn {
-      display: block;
-      text-align: center;
-      margin-top: 10px;
-      background: #00cc99;
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
       color: white;
-      padding: 10px;
-      text-decoration: none;
-      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .buy-btn:hover {
-      background: #009977;
+    header {
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      border-bottom: 2px solid #6a00ff;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    .btn {
+      background-color: #6a00ff;
+      padding: 12px 24px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin: 10px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #4700b3;
+    }
+    .wa-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      z-index: 99;
+    }
+    .wa-btn:hover {
+      background-color: #128c7e;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🌌 KingTopUp Galaxy - Produk Topupedia</h1>
+  <header>👑 KingTopUp - Portal Top Up Game Murah</header>
 
-    <div class="warning">
-      ❗ <strong>PERHATIAN:</strong><br>
-      Semua pembelian <u>HARUS</u> melalui tombol “Beli Sekarang” di bawah ini.<br>
-      Jika kamu kembali ke halaman utama Topupedia, pesanan <strong>tidak akan tercatat</strong> sebagai milik kami.
-    </div>
-
-    <!-- PRODUK LIST START -->
-
-    <div class="product">
-      <img src="https://i.imgur.com/N9XxsUt.jpg" alt="Mobile Legends">
-      <h3>Mobile Legends</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/mobile-legends?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/NEN5Kq1.jpg" alt="Free Fire">
-      <h3>Free Fire</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/free-fire?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/Hq5u0V6.jpg" alt="PUBG Mobile">
-      <h3>PUBG Mobile</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/pubg-mobile?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/CAUX2Ry.jpg" alt="Valorant">
-      <h3>Valorant</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/valorant?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/jLKLKX1.jpg" alt="Honkai Star Rail">
-      <h3>Honkai Star Rail</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/honkai-star-rail?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/hTH2cdd.jpg" alt="Wuthering Waves">
-      <h3>Wuthering Waves</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/wuthering-waves?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/nvXQbwt.jpg" alt="Steam Wallet">
-      <h3>Steam Wallet</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/steam-wallet?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/Y0MwWlR.jpg" alt="Blood Strike">
-      <h3>Blood Strike</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/blood-strike?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <div class="product">
-      <img src="https://i.imgur.com/lSojcy2.jpg" alt="Roblox">
-      <h3>Roblox</h3>
-      <a class="buy-btn" href="https://www.topupedia.com/id-i/product/roblox?ref=m4rauxd6asy5" target="_blank">Beli Sekarang</a>
-    </div>
-
-    <!-- Tambahkan lebih banyak jika mau -->
+  <div class="buttons">
+    <a href="https://www.topupedia.com/id-i?ref=m4rauxd6asy5" class="btn" target="_blank">🔗 Kunjungi Topup Sekarang</a>
   </div>
+
+  <a href="https://wa.me/6281312624847" class="wa-btn">Hubungi Admin</a>
 </body>
 </html>
