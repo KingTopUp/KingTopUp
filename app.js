@@ -1,31 +1,66 @@
-const gameProducts = [
+// js/app.js
+
+const products = [
   {
-    name: "Mobile Legends Diamond 100",
-    description: "Diamond resmi untuk Mobile Legends",
+    name: "Mobile Legends 100 Diamonds",
+    description: "Top up cepat dan aman.",
     price: "Rp 25.000",
-    affiliateLink: "https://www.topupedia.com/id-i?ref=m4rauxd6asy5"
+    image: "https://www.topupedia.com/assets/img/products/mlbb.png",
+    link: "https://www.topupedia.com/id-id/order/MLBB-130?ref=m4rauxd6asy5"
   },
-  // … tambahkan produk lainnya
+  {
+    name: "Free Fire 100 Diamonds",
+    description: "Harga murah proses cepat.",
+    price: "Rp 22.000",
+    image: "https://www.topupedia.com/assets/img/products/freefire.png",
+    link: "https://www.topupedia.com/id-id/order/FREEFIRE-140?ref=m4rauxd6asy5"
+  },
+  {
+    name: "PUBG UC 60",
+    description: "Top up PUBG Mobile termurah.",
+    price: "Rp 15.000",
+    image: "https://www.topupedia.com/assets/img/products/pubgm.png",
+    link: "https://www.topupedia.com/id-id/order/PUBGM-150?ref=m4rauxd6asy5"
+  },
+  {
+    name: "Valorant Points 300",
+    description: "Top up cepat dan resmi.",
+    price: "Rp 45.000",
+    image: "https://www.topupedia.com/assets/img/products/valorant.png",
+    link: "https://www.topupedia.com/id-id/order/VALORANT-160?ref=m4rauxd6asy5"
+  }
 ];
 
-// Fungsi untuk menampilkan produk
-function displayProducts() {
-  const container = document.getElementById("product-container");
-  container.innerHTML = "";
+function displayProducts(searchTerm = '') {
+  const container = document.getElementById('product-container');
+  container.innerHTML = '';
 
-  gameProducts.forEach(p => {
-    const card = document.createElement("div");
-    card.className = "border rounded-lg p-4 bg-white";
+  const filtered = products.filter(p =>
+    p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    p.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
+  if (filtered.length === 0) {
+    container.innerHTML = '<p style="text-align:center;">Produk tidak ditemukan.</p>';
+    return;
+  }
+
+  filtered.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
     card.innerHTML = `
-      <h3 class="font-bold">${p.name}</h3>
-      <p>${p.description}</p>
-      <p class="font-semibold text-indigo-800">${p.price}</p>
-      <a href="${p.affiliateLink}" target="_blank" class="mt-2 inline-block bg-indigo-600 text-white px-4 py-2 rounded">Beli Sekarang</a>
+      <img src="${product.image}" alt="${product.name}" />
+      <h3>${product.name}</h3>
+      <p>${product.description}</p>
+      <p><strong>${product.price}</strong></p>
+      <a href="${product.link}" target="_blank">Beli Sekarang</a>
     `;
     container.appendChild(card);
   });
 }
 
-// Eksekusi saat halaman selesai dimuat
-document.addEventListener("DOMContentLoaded", displayProducts);
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('search-input');
+  input.addEventListener('input', e => displayProducts(e.target.value));
+  displayProducts();
+});
