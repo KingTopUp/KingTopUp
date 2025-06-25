@@ -1,53 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KING TOP UP</title>
-  <link rel="stylesheet" href="style.css">
+  <title>KingTopUp - Galaxy Theme</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Logo KingTopUp" class="logo">
-    <h1>KING TOP UP</h1>
-    <p>Top Up Game Murah, Cepat, dan Aman</p>
+    <img src="images/logo.png" alt="KingTopUp Logo" class="logo"/>
+    <h1>KingTopUp</h1>
+    <p>Top Up Game Murah • Aman • Cepat</p>
   </header>
-
-  <section class="games">
-    <h2>Semua Game Populer</h2>
-    <div class="game-list">
-      <div class="game"><img src="images/mlbb.jpg"><h3>Mobile Legends</h3></div>
-      <div class="game"><img src="images/freefire.jpg"><h3>Free Fire</h3></div>
-      <div class="game"><img src="images/pubgm.jpg"><h3>PUBG Mobile</h3></div>
-      <div class="game"><img src="images/pubgpc.jpg"><h3>PUBG PC</h3></div>
-      <div class="game"><img src="images/valorant.jpg"><h3>Valorant</h3></div>
-      <div class="game"><img src="images/steam.jpg"><h3>Steam Wallet</h3></div>
-      <div class="game"><img src="images/genshin.jpg"><h3>Genshin Impact</h3></div>
-      <div class="game"><img src="images/honkai.jpg"><h3>Honkai Star Rail</h3></div>
-      <div class="game"><img src="images/wuthering.jpg"><h3>Wuthering Waves</h3></div>
-      <div class="game"><img src="images/honor.jpg"><h3>Honor of Kings</h3></div>
-      <div class="game"><img src="images/codm.jpg"><h3>COD Mobile</h3></div>
-      <div class="game"><img src="images/codpc.jpg"><h3>COD Warzone</h3></div>
-      <div class="game"><img src="images/apex.jpg"><h3>Apex Legends</h3></div>
-      <div class="game"><img src="images/domino.jpg"><h3>Higgs Domino</h3></div>
-      <div class="game"><img src="images/bloodstrike.jpg"><h3>Blood Strike</h3></div>
-      <div class="game"><img src="images/roblox.jpg"><h3>Roblox</h3></div>
-      <div class="game"><img src="images/minecraft.jpg"><h3>Minecraft</h3></div>
-      <div class="game"><img src="images/stumble.jpg"><h3>Stumble Guys</h3></div>
-      <div class="game"><img src="images/sausage.jpg"><h3>Sausage Man</h3></div>
-      <div class="game"><img src="images/lol.jpg"><h3>League of Legends</h3></div>
-      <div class="game"><img src="images/wildrift.jpg"><h3>LOL: Wild Rift</h3></div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Pembayaran & Kontak</h2>
-    <p>Bayar via OVO, GoPay, Dana ke WhatsApp: <strong>+6281312624847</strong></p>
-    <a href="https://wa.me/6281312624847" target="_blank" class="wa-button">Hubungi via WhatsApp</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 KingTopUp. All rights reserved.</p>
-  </footer>
+  <main>
+    <section class="form-section">
+      <h2>Formulir Pembelian</h2>
+      <form id="orderForm">
+        <label for="game">Pilih Game:</label>
+        <select id="game" name="game">
+          <option value="mlbb">Mobile Legends</option>
+          <option value="ff">Free Fire</option>
+          <option value="pubg">PUBG Mobile</option>
+          <option value="hsr">Honkai Star Rail</option>
+          <option value="wow">Wuthering Waves</option>
+          <option value="bs">Blood Strike</option>
+          <option value="steam">Steam Wallet</option>
+        </select>
+        <label for="product">Jumlah Top Up:</label>
+        <select id="product" name="product">
+          <option value="86">86 Diamond</option>
+          <option value="172">172 Diamond</option>
+          <option value="344">344 Diamond</option>
+          <option value="706">706 Diamond</option>
+        </select>
+        <label for="id">ID Game:</label>
+        <input type="text" id="id" name="id" required />
+        <label for="server">Server/Zona (jika ada):</label>
+        <input type="text" id="server" name="server" />
+        <label for="payment">Metode Pembayaran:</label>
+        <select id="payment" name="payment">
+          <option value="ovo">OVO</option>
+          <option value="gopay">GoPay</option>
+          <option value="dana">Dana</option>
+        </select>
+        <label for="wa">No WhatsApp:</label>
+        <input type="text" id="wa" name="wa" required />
+        <button type="submit">Beli Sekarang</button>
+      </form>
+      <p id="status"></p>
+    </section>
+  </main>
+  <footer>© 2025 KingTopUp - All Rights Reserved</footer>
+  <script src="script.js"></script>
 </body>
 </html>

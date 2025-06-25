@@ -1,60 +1,39 @@
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #020024, #090979, #000000);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
   color: white;
+  margin: 0;
+  padding: 0;
 }
 header {
   text-align: center;
-  background-color: #111;
-  padding: 2em 1em;
+  padding: 20px;
 }
 .logo {
-  width: 80px;
+  height: 80px;
 }
-h1 {
-  margin: 0.2em 0;
-  color: gold;
-}
-.games {
-  padding: 2em;
-  text-align: center;
-}
-.game-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-}
-.game {
-  background: #1a1a1a;
-  padding: 1em;
+form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
   border-radius: 10px;
-  width: 140px;
+  max-width: 400px;
+  margin: auto;
 }
-.game img {
+form input, form select, form button {
   width: 100%;
+  margin-top: 10px;
+  padding: 10px;
   border-radius: 5px;
+  border: none;
 }
-.contact {
-  text-align: center;
-  padding: 2em;
-  background-color: #111;
-}
-.wa-button {
-  display: inline-block;
-  background-color: #25D366;
+form button {
+  background-color: #00bfff;
   color: white;
-  padding: 0.7em 1.5em;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+  cursor: pointer;
 }
 footer {
-  background-color: #000;
   text-align: center;
-  padding: 1em;
-  font-size: 14px;
-  color: #aaa;
+  padding: 10px;
+  background-color: #111;
 }
