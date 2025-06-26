@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+  color: #ffd700;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.main-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1f1f3b;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#login-btn {
+  background-color: #ffd700;
+  color: #000;
+}
+
+#logout-btn {
+  background-color: #00ffd0;
+  color: #000;
+}

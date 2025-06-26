@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - Isi Saldo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>👑 Admin Panel - Isi Saldo</h1>
+  </header>
+
+  <main class="main-container">
+    <div class="card">
+      <h3>Tambah Saldo Pengguna</h3>
+      <input type="email" id="email" placeholder="Email pengguna">
+      <input type="number" id="amount" placeholder="Jumlah saldo (Rp)">
+      <button onclick="addBalance()">Tambah Saldo</button>
+      <p id="result" style="margin-top:10px;"></p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 KingTopUp. All rights reserved.
+  </footer>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top Up Game - KingTopUp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎮 Top Up Game</h1>
+  </header>
+  <main class="main-container">
+    <div class="card">
+      <h3>Form Top Up</h3>
+      <input type="text" id="game" placeholder="Nama Game (contoh: MLBB)">
+      <input type="number" id="price" placeholder="Harga (Rp)">
+      <button onclick="submitTopup()">Bayar Pakai Dompet</button>
+      <p id="topup-result" style="margin-top: 10px;"></p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 KingTopUp. All rights reserved.
+  </footer>
+
+  <script type="module" src="topup.js"></script>
+</body>
+</html>

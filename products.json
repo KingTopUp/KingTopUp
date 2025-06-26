@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mlbb",
+    "name": "Mobile Legends",
+    "icon": "images/mlbb.png",
+    "denominations": [
+      { "code": "MLBB_86", "label": "86 Diamonds", "price": 13500 },
+      { "code": "MLBB_172", "label": "172 Diamonds", "price": 26500 },
+      { "code": "MLBB_257", "label": "257 Diamonds", "price": 39000 },
+      { "code": "MLBB_344", "label": "344 Diamonds", "price": 51000 },
+      { "code": "MLBB_429", "label": "429 Diamonds", "price": 62000 },
+      { "code": "MLBB_514", "label": "514 Diamonds", "price": 74000 },
+      { "code": "MLBB_WEEKLY", "label": "Weekly Diamond Pass (WDP)", "price": 24500 }
+    ]
+  },
+  {
+    "id": "ff",
+    "name": "Free Fire",
+    "icon": "images/freefire.png",
+    "denominations": [
+      { "code": "FF_70", "label": "70 Diamonds", "price": 9500 },
+      { "code": "FF_140", "label": "140 Diamonds", "price": 18500 },
+      { "code": "FF_355", "label": "355 Diamonds", "price": 44500 },
+      { "code": "FF_720", "label": "720 Diamonds", "price": 89000 }
+    ]
+  },
+  {
+    "id": "pubg",
+    "name": "PUBG Mobile",
+    "icon": "images/pubg.png",
+    "denominations": [
+      { "code": "PUBG_60", "label": "60 UC", "price": 11500 },
+      { "code": "PUBG_325", "label": "325 UC", "price": 57000 },
+      { "code": "PUBG_660", "label": "660 UC", "price": 110000 }
+    ]
+  },
+  {
+    "id": "valorant",
+    "name": "Valorant",
+    "icon": "images/valorant.png",
+    "denominations": [
+      { "code": "VAL_125", "label": "125 VP", "price": 14000 },
+      { "code": "VAL_420", "label": "420 VP", "price": 47000 },
+      { "code": "VAL_700", "label": "700 VP", "price": 78000 }
+    ]
+  },
+  {
+    "id": "genshin",
+    "name": "Genshin Impact",
+    "icon": "images/genshin.png",
+    "denominations": [
+      { "code": "GEN_60", "label": "60 Genesis Crystals", "price": 13500 },
+      { "code": "GEN_300", "label": "300 GC + Bonus", "price": 68000 },
+      { "code": "GEN_980", "label": "980 GC + Bonus", "price": 135000 }
+    ]
+  },
+  {
+    "id": "steam",
+    "name": "Steam Wallet ID",
+    "icon": "images/steam.png",
+    "denominations": [
+      { "code": "STEAM_12000", "label": "Rp12.000", "price": 11800 },
+      { "code": "STEAM_50000", "label": "Rp50.000", "price": 49000 },
+      { "code": "STEAM_100000", "label": "Rp100.000", "price": 97000 }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KingTopUp - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>👑 KingTopUp</h1>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Produk</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="card">
+    <h3>Login & Dompet Pengguna</h3>
+    <div id="user-info" style="margin: 10px 0;"></div>
+    <button id="login-btn" onclick="signInWithGoogle()">🔐 Login Google</button>
+    <button id="logout-btn" onclick="logout()" style="display:none;">🔓 Logout</button>
+    <hr style="margin: 20px 0;">
+      <h3>Login dengan Google</h3>
+      <div id="user-info" style="margin: 10px 0;"></div>
+      <button id="login-btn" onclick="signInWithGoogle()">🔐 Login Google</button>
+      <button id="logout-btn" onclick="logout()" style="display:none;">🔓 Logout</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 KingTopUp. All rights reserved.
+  </footer>
+
+  <script type="module" src="firebase-auth.js"></script>
+</body>
+</html>
