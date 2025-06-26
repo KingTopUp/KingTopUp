@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    color: #fff;
+    text-align: center;
+}
+.portal .container {
+    margin-top: 20vh;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 20px;
+}
+.btn {
+    background: #38bdf8;
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+.product-list a {
+    display: block;
+    background: #1e40af;
+    padding: 12px;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.product-list a:hover {
+    background: #2563eb;
+}
